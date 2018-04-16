@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中国广播影视出版社</title>
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<link type="text/css" rel="stylesheet" href="css/LRbanner.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/duilian.js"></script>
+
+</head>
+
+<body>
+
+	
+<div class="warp_header">
+	<div class="header_box">
+		<div class="header_top">
+			<div class="fl"><a href="#"><img src="img/logo.jpg" height="111" border="0" /></a></div>
+			<table width="570" border="0" height="111" align="right">
+			  <tr>
+				<td width="430" align="left" valign="middle">
+					<form>
+						<div class="select_border"> 
+							<div class="container"> 
+								<select name="" class="select"> 
+								<option>新闻</option> 
+								<option>图书</option> 
+								</select> 
+							</div> 
+						</div> 
+						<input type="text" class="input01 mr10" />
+						<input name="" type="submit" class="btn01" value="检索" />
+		          </form></td>
+				<td width="63" align="center"><a href="#"><font color="#FB8007">我的账户</font></a></td>
+				<td width="63" align="left">
+					
+					<ul class="hyzx">
+							<li>
+								<img src="img/icon01.jpg" />
+								<div class="hyzx_info">
+									<a href="#">登录</a>
+									<a href="#">注册</a>
+									<a href="#">我的书架</a>
+									<a href="#">退出</a>								
+								</div>
+							</li>
+				  </ul>				
+				</td>
+				
+			  </tr>
+			</table>
+
+		</div>
+	
+	</div>
+	
+	
+	<div class="nav_box">
+		<div class="nav">
+			<a href="#" class="nav01"><b>首页</b></a>
+			<a href="#" class="nav02"><b>影视动态</b></a>
+			<a href="#" class="nav03"><b>图书商城</b></a>
+			<a href="#" class="nav04"><b>自助出版</b></a>
+			<a href="#" class="nav05"><b>知识服务</b></a>
+			<a href="#" class="nav06"><b>关于我们</b></a>
+			
+		</div>	
+	</div>
+	
+</div>
+
+
+
+	
+	
+<div class="warp">
+	<div class="Individual">
+		<div class="location"><a>当前位置：</a><a href="#">首页</a> > 出版社简介</div>
+		<div class="Individual_left fl">
+			<h5>机构管理</h5>
+			<div id="levelmenu">
+				<div class="unit current">
+					<h3>广播影视出版社</h3>
+					<ul>
+					   <li><a href="#">出版社领导</a></li>
+					   <li><a href="#">浏览用户</a></li>
+					   <li><a href="#">管理员</a></li>
+					</ul>
+				 </div>
+				 <div class="unit">
+					<h3><a href="#">社外机构</a></h3>
+				 </div>
+			</div>
+			<script type="text/javascript">
+					function init(){
+					 if(!document.getElementById || !document.getElementsByTagName){retun;}
+					 var arrayDiv=document.getElementById("levelmenu");
+					 if(!arrayDiv){return;}
+					 var divObj=arrayDiv.getElementsByTagName("div");
+					 var length=divObj.length;
+					 var agreeDiv=new Array();
+					 for(var i=0;i<length;i++){
+					  if(divObj[i].className.indexOf("unit")>=0){
+					   agreeDiv.push(divObj[i]);
+					   divObj[i].onclick=function(event){
+						showCurrentMenu(agreeDiv,this,event);
+					   }
+					  }
+					 }
+					}
+					function showCurrentMenu(agreeDiv,currentObj,event){
+					 if(!event){event=window.event;}
+					 var eventObj=event.srcElement?event.srcElement:event.target;
+					 //先隐藏所有ul
+					 var length=agreeDiv.length;
+					 for(var i=0;i<length;i++){
+					  if(eventObj.parentNode==agreeDiv[i] || eventObj.nodeName!="H3"){continue;}
+					  agreeDiv[i].className="unit";
+					 }
+					 if(eventObj.nodeName=="H3"){
+					  if(eventObj.parentNode.className=="unit"){
+					   eventObj.parentNode.className="unit current"
+					  }else{
+					   eventObj.parentNode.className="unit"
+					  }
+					 }
+					}
+					init();
+			</script>
+			
+		</div>
+		
+		
+		<div class="Individual_right fr">
+			<div class="jg_nav">
+				<a href="#">新增机构</a>
+				<a href="#">修改机构</a>
+				<a href="#">删除机构</a>
+				<a href="#">新增用户</a>
+				<a href="#" class="on">修改用户</a>
+				<a href="#">删除用户</a>
+				<a href="#">设置权限</a>
+			</div>
+			<div class="bk p30 mt30 addjg">
+			<form>
+				<table width="100%" align="center" border="0">
+				  <tr>
+					<td align="right">用户姓名：</td>
+					<td align="left"><input type="text" class="input04 w216px" value="张三" /></td>
+					<td align="right">用户登录名：</td>
+					<td align="left"><input type="text" class="input04 w216px" value="zhangsan" /></td>
+				  </tr>
+				  <tr>
+					<td align="right">密码：</td>
+					<td align="left"><input type="text" class="input04 w216px" value="123" /></td>
+					<td align="right">验证密码：</td>
+					<td align="left"><input type="text" class="input04 w216px" value="123" /></td>
+				  </tr>
+				  <tr>
+					<td align="right">用户类型：</td>
+					<td align="left"><select name="select">
+                      <option value="出版社领导">出版社领导&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					  <option value="普通用户">普通用户</option>
+					  <option value="管理员">管理员</option>
+                    </select></td>
+					<td align="right">邮箱：</td>
+					<td align="left"><input type="text" class="input04 w216px" value="123@qq.com" /></td>
+				  </tr>
+				  <tr>
+					<td align="right">通信地址：</td>
+					<td align="left"><input type="text" class="input04 w216px" value="北京市海淀区上地" /></td>
+					<td align="right">邮编：</td>
+					<td align="left"><input type="text" class="input04 w216px" value="100088" /></td>
+				  </tr>
+				  <tr>
+					<td align="right">办公电话：</td>
+					<td align="left"><input type="text" class="input04 w216px" value="12123123" /></td>
+					<td align="right">手机：</td>
+					<td align="left"><input type="text" class="input04 w216px" value="12312312312" /></td>
+				  </tr>
+				  <tr>
+					<td colspan="4"></td>
+				  </tr>
+				  <tr>
+					<td colspan="4" align="center">
+						<input name="" type="submit" class="btn09 mr20" value="确定"/><input name="" type="submit" class="btn09" value="取消"/>					</td>
+				  </tr>
+				  <tr>
+					<td colspan="4"></td>
+				  </tr>
+				</table>
+			</form>
+			
+			
+			</div>
+		
+		</div>
+
+		
+		
+	</div>
+
+
+
+	
+	
+  
+	
+</div>
+<iframe src="footer.html" width="100%" height="125" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中国广播影视出版社</title>
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<link type="text/css" rel="stylesheet" href="css/LRbanner.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/duilian.js"></script>
+
+</head>
+
+<body>
+
+	
+<div class="warp_header">
+	<div class="header_box">
+		<div class="header_top">
+			<div class="fl"><a href="#"><img src="img/logo.jpg" height="111" border="0" /></a></div>
+			<table width="570" border="0" height="111" align="right">
+			  <tr>
+				<td width="430" align="left" valign="middle">
+					<form>
+						<div class="select_border"> 
+							<div class="container"> 
+								<select name="" class="select"> 
+								<option>新闻</option> 
+								<option>图书</option> 
+								</select> 
+							</div> 
+						</div> 
+						<input type="text" class="input01 mr10" />
+						<input name="" type="submit" class="btn01" value="检索" />
+		          </form></td>
+				<td width="63" align="center"><a href="#"><font color="#FB8007">我的账户</font></a></td>
+				<td width="63" align="left">
+					
+					<ul class="hyzx">
+							<li>
+								<img src="img/icon01.jpg" />
+								<div class="hyzx_info">
+									<a href="#">登录</a>
+									<a href="#">注册</a>
+									<a href="#">我的书架</a>
+									<a href="#">退出</a>								
+								</div>
+							</li>
+				  </ul>				
+				</td>
+				
+			  </tr>
+			</table>
+
+		</div>
+	
+	</div>
+	
+	
+	<div class="nav_box">
+		<div class="nav">
+			<a href="#" class="nav01"><b>首页</b></a>
+			<a href="#" class="nav02"><b>影视动态</b></a>
+			<a href="#" class="nav03"><b>图书商城</b></a>
+			<a href="#" class="nav04"><b>自助出版</b></a>
+			<a href="#" class="nav05"><b>知识服务</b></a>
+			<a href="#" class="nav06"><b>关于我们</b></a>
+			
+		</div>	
+	</div>
+	
+</div>
+
+
+
+	
+	
+<div class="warp">
+	<div class="Individual">
+		<div class="location"><a>当前位置：</a><a href="#">首页</a> > 出版社简介</div>
+		<div class="Individual_left grzx fl">
+			<h5>个人中心</h5>
+			<div id="levelmenu">
+				<div class="unit">
+					<h3><a href="#">会员信息</a></h3>
+				 </div>
+				<div class="unit">
+					<h3><a href="#">我的稿件</a></h3>
+				 </div>
+				 <div class="unit">
+					<h3>我的订单</h3>
+					<ul>
+					   <li><a href="#">所有订单</a></li>
+					</ul>
+				 </div>
+				 <div class="unit">
+					<h3>我的足迹</h3>
+					<ul>
+					   <li><a href="#">我的浏览</a></li>
+					   <li><a href="#">我的评价</a></li>
+					   <li><a href="#">我的收藏</a></li>
+					</ul>
+				 </div>
+				 <div class="unit">
+					<h3><a href="#">作者认证</a></h3>
+				 </div>
+				 
+			</div>
+			<script type="text/javascript">
+					function init(){
+					 if(!document.getElementById || !document.getElementsByTagName){retun;}
+					 var arrayDiv=document.getElementById("levelmenu");
+					 if(!arrayDiv){return;}
+					 var divObj=arrayDiv.getElementsByTagName("div");
+					 var length=divObj.length;
+					 var agreeDiv=new Array();
+					 for(var i=0;i<length;i++){
+					  if(divObj[i].className.indexOf("unit")>=0){
+					   agreeDiv.push(divObj[i]);
+					   divObj[i].onclick=function(event){
+						showCurrentMenu(agreeDiv,this,event);
+					   }
+					  }
+					 }
+					}
+					function showCurrentMenu(agreeDiv,currentObj,event){
+					 if(!event){event=window.event;}
+					 var eventObj=event.srcElement?event.srcElement:event.target;
+					 //先隐藏所有ul
+					 var length=agreeDiv.length;
+					 for(var i=0;i<length;i++){
+					  if(eventObj.parentNode==agreeDiv[i] || eventObj.nodeName!="H3"){continue;}
+					  agreeDiv[i].className="unit";
+					 }
+					 if(eventObj.nodeName=="H3"){
+					  if(eventObj.parentNode.className=="unit"){
+					   eventObj.parentNode.className="unit current"
+					  }else{
+					   eventObj.parentNode.className="unit"
+					  }
+					 }
+					}
+					init();
+			</script>
+			
+		</div>
+		
+		
+		<div class="Individual_right fr">
+			<h4><b>修改资料</b></h4>
+		  	<table border="0" class="infomessage_xgzl bk" width="100%" align="center">
+					  <tr>
+						<td width="21%" align="right"></td>
+						<td width="79%"></td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">用户名：</td>
+						<td width="79%">哦了</td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">姓 名：</td>
+						<td><input name="Input" type="text" class="input04 w140px" />
+							<span class="red pl10">*</span></td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">邮 箱：</td>
+						<td><input name="Input" type="text" class="input04 w180px"/></td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">姓 别：</td>
+						<td><select name="select">
+							<option value="男">男</option>
+							<option value="女">女</option>
+						  </select>
+						</td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">出生日期：</td>
+						<td><input name="Input" type="text" class="input04 w140px"  /></td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">所在学校：</td>
+						<td><input name="Input" type="text" class="input04 w240px"  /></td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">省份/直辖市：</td>
+						<td><select name="select">
+							<option value="天津市    ">天津市 </option>
+							<option value="女">女</option>
+						  </select>
+						  城 市：
+						  <select name="select">
+							<option value="天津市    ">天津市 </option>
+							<option value="女">女</option>
+						  </select>
+						  区 县：
+						  <select name="select">
+							<option value="天津市    ">天津市 </option>
+							<option value="女">女</option>
+						  </select>
+						</td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">传 真：</td>
+						<td><input name="Input" type="text" class="input04 w140px"  /></td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">手机号：</td>
+						<td><input name="Input" type="text" class="input04 w140px"  />
+							<span class="red pl10">*</span></td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">固定电话：</td>
+						<td><input name="Input" type="text" class="input04 w140px"  />
+						  <span>格式如010-00000000或010-11231231-1234</span></td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">邮 编：</td>
+						<td><input name="Input" type="text"  class="input04 w120px"  />
+							<span class="red pl10">*</span></td>
+					  </tr>
+					  <tr>
+						<td width="21%" align="right">通讯地址：</td>
+						<td><input name="Input" type="text" class="input04 w240px"  />
+							<span class="red pl10">*</span></td>
+					  </tr>
+					  <tr>
+						<td width="21%" height="55" align="right"></td>
+						<td><input name="Input" type="submit" class="btn11 mr20 fl" value="提 交" />
+							<input name="Input" type="submit" class="btn11" value="重 置" /></td>
+					  </tr>
+					  <tr>
+						<td width="21%" height="55" align="right">&nbsp;</td>
+						<td></td>
+					  </tr>
+					</table>
+			
+		
+		</div>
+
+		
+		
+	</div>
+
+
+
+	
+	
+  
+	
+</div>
+<iframe src="footer.html" width="100%" height="125" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+</body>
+</html>

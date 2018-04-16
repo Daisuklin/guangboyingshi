@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中国广播影视出版社</title>
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<link type="text/css" rel="stylesheet" href="css/LRbanner.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/duilian.js"></script>
+
+</head>
+
+<body>
+
+	
+<div class="warp_header">
+	<div class="header_box">
+		<div class="header_top">
+			<div class="fl"><a href="#"><img src="img/logo.jpg" height="111" border="0" /></a></div>
+			<table width="570" border="0" height="111" align="right">
+			  <tr>
+				<td width="430" align="left" valign="middle">
+					<form>
+						<div class="select_border"> 
+							<div class="container"> 
+								<select name="" class="select"> 
+								<option>新闻</option> 
+								<option>图书</option> 
+								</select> 
+							</div> 
+						</div> 
+						<input type="text" class="input01 mr10" />
+						<input name="" type="submit" class="btn01" value="检索" />
+		          </form></td>
+				<td width="63" align="center"><a href="#"><font color="#FB8007">我的账户</font></a></td>
+				<td width="63" align="left">
+					
+					<ul class="hyzx">
+							<li>
+								<img src="img/icon01.jpg" />
+								<div class="hyzx_info">
+									<a href="#">登录</a>
+									<a href="#">注册</a>
+									<a href="#">我的书架</a>
+									<a href="#">退出</a>								
+								</div>
+							</li>
+				  </ul>				
+				</td>
+				
+			  </tr>
+			</table>
+
+		</div>
+	
+	</div>
+	
+	
+	<div class="nav_box">
+		<div class="nav">
+			<a href="#" class="nav01"><b>首页</b></a>
+			<a href="#" class="nav02"><b>影视动态</b></a>
+			<a href="#" class="nav03"><b>图书商城</b></a>
+			<a href="#" class="nav04"><b>自助出版</b></a>
+			<a href="#" class="nav05"><b>知识服务</b></a>
+			<a href="#" class="nav06"><b>关于我们</b></a>
+			
+		</div>	
+	</div>
+	
+</div>
+
+
+
+	
+	
+<div class="warp">
+	<div class="about">
+		<div class="location"><a>当前位置：</a><a href="#">首页</a> > 出版社简介</div>
+		<div class="about_left fl">
+			<h5><b>关于我们</b></h5>
+			<ul>
+				<li><a href="#">我社简介</a></li>
+				<li><a href="#">我社历史</a></li>
+				<li><a href="#">我社荣誉</a></li>
+				<li><a href="#">机构设置</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+		
+		<div class="about_right fr">
+			<h4><b>联系方式</b></h4>
+			<div class="p30 bk lh30">
+				
+				<table width="100%" border="0">
+				  <tr>
+					<th colspan="2"><b>联系方式</b></th>
+				  </tr>
+				  <tr>
+					<td width="50%" valign="middle"><img src="img/icon13.jpg" class="mr10" />北京市西城区广安门北滨河路2-10</td>
+					<td width="50%" valign="middle"><img src="img/icon15.jpg" class="mr10" />010-86093580</td>
+				  </tr>
+				  <tr>
+					<td width="50%" valign="middle"><img src="img/icon14.jpg" class="mr10" />icrtp8@sina.com</td>
+					<td width="50%" valign="middle"><img src="img/icon16.jpg" class="mr10" />http://www.crtp.com.cn</td>
+				  </tr>
+				</table>
+				
+				<table width="100%" border="0" class="mt20">
+				  <tr>
+					<th colspan="2"><b>工作时间</b></th>
+				  </tr>
+				  <tr>
+					<td valign="middle">周一至周五：9：00-18:00</td>
+				  </tr>
+				</table>
+
+				
+				<div style="width:620px;height:364px;border:#ccc solid 1px; margin-top:50px;" id="dituContent"></div>
+				<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+				<script type="text/javascript">
+					//创建和初始化地图函数：
+					function initMap(){
+						createMap();//创建地图
+						setMapEvent();//设置地图事件
+						addMapControl();//向地图添加控件
+						addMarker();//向地图中添加marker
+					}
+					
+					//创建地图函数：
+					function createMap(){
+						var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+						var point = new BMap.Point(116.357411,39.906817);//定义一个中心点坐标
+						map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+						window.map = map;//将map变量存储在全局
+					}
+					
+					//地图事件设置函数：
+					function setMapEvent(){
+						map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+						map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+						map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+						map.enableKeyboard();//启用键盘上下左右键移动地图
+					}
+					
+					//地图控件添加函数：
+					function addMapControl(){
+						//向地图中添加缩放控件
+					var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+					map.addControl(ctrl_nav);
+								}
+					
+					//标注点数组
+					var markerArr = [{title:"中国广播影视出版社",content:"我的备注",point:"116.357348|39.906686",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+						 ];
+					//创建marker
+					function addMarker(){
+						for(var i=0;i<markerArr.length;i++){
+							var json = markerArr[i];
+							var p0 = json.point.split("|")[0];
+							var p1 = json.point.split("|")[1];
+							var point = new BMap.Point(p0,p1);
+							var iconImg = createIcon(json.icon);
+							var marker = new BMap.Marker(point,{icon:iconImg});
+							var iw = createInfoWindow(i);
+							var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+							marker.setLabel(label);
+							map.addOverlay(marker);
+							label.setStyle({
+										borderColor:"#808080",
+										color:"#333",
+										cursor:"pointer"
+							});
+							
+							(function(){
+								var index = i;
+								var _iw = createInfoWindow(i);
+								var _marker = marker;
+								_marker.addEventListener("click",function(){
+									this.openInfoWindow(_iw);
+								});
+								_iw.addEventListener("open",function(){
+									_marker.getLabel().hide();
+								})
+								_iw.addEventListener("close",function(){
+									_marker.getLabel().show();
+								})
+								label.addEventListener("click",function(){
+									_marker.openInfoWindow(_iw);
+								})
+								if(!!json.isOpen){
+									label.hide();
+									_marker.openInfoWindow(_iw);
+								}
+							})()
+						}
+					}
+					//创建InfoWindow
+					function createInfoWindow(i){
+						var json = markerArr[i];
+						var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+						return iw;
+					}
+					//创建一个Icon
+					function createIcon(json){
+						var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+						return icon;
+					}
+					
+					initMap();//创建和初始化地图
+				</script>
+
+
+
+
+			</div>
+		</div>
+	
+	</div>
+
+
+
+	
+	
+  
+	
+</div>
+<iframe src="footer.html" width="100%" height="125" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+</body>
+</html>
